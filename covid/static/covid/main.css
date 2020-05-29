@@ -124,6 +124,14 @@ body {
   margin-bottom: 50px;
 }
 
+.preventSpread{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+}
+
 .graphTitle {
   margin-top: 80px;
   text-align: center;
