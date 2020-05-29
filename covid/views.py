@@ -84,3 +84,7 @@ def home(request):
 
     return render(request, 'covid/home.html', context)
 
+def about(request):
+
+    return render(request, 'covid/about.html')
+
