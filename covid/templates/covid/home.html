@@ -1,0 +1,80 @@
+{% extends "covid/base.html" %}
+{% block content %}
+
+ 
+<div class="homeContainer">
+    <div class="mainHead">
+        Ohio vs COVID-19 
+    </div>  
+    <h1>Information on COVID-19 for {{ object.state}}IO</h1>
+    <a class="btn btn-primary" href="https://www.apple.com/covid19/" role="button">Start Screening Here</a>
+
+<div class="row justify-content-cemter">
+    <div class="col-3">
+        <div class ="headingFor">
+            Number of deaths: <mark class="red">{{ object.death }}</mark>
+         </div>
+    </div>
+    <div class="col-3">
+        <div class ="headingFor">
+            Fatality Rate in {{ object.state }}: {{ fatRate }}%
+        </div>
+    </div>
+    <div class="col-3">
+        <div class ="headingFor">
+         Hospitalized: <mark class="blue">{{ object.hospitalized}} </mark>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class ="headingFor">
+            Tested: <mark class="green">{{ object.totalTestResults }}</mark>
+         </div>
+    </div>
+</div>
+        <div class="row justify-content-cemter">
+            <div class="col-6">
+                <div class ="graphTitle"> Death from Covid-19</div>
+
+                {{ totalDeathGraph | safe }}
+            </div>
+            <div class="col-6">
+                <div class ="graphTitle"> Cases of Covid-19</div>
+                {{ HopGraph| safe }}
+            </div>
+         
+        </div>
+    <div class="row justify-content-cemter">
+        <div class="col-6">
+           <div class ="graphTitle"> Keeping track of Covid-19 Deaths</div>
+            {{ deaths | safe }}
+        </div>
+        <div class="col-6">
+            <div class="textBlock">
+                There have been at least {{object.positive }} cases of coronavirus in Ohio, according to a New York Times database. As of today, at least {{ object.death }} people had died.
+            </div>
+        </div>
+    </div>
+
+    <div class="mainHead">
+        How to Prevent the Spread
+    </div>  
+
+
+    <div class="row justify-content-cemter">
+        <div class="col-6">
+           <div class ="graphTitle"> Keeping track of Covid-19 Deaths</div>
+            {{ deaths | safe }}
+        </div>
+        <div class="col-6">
+            <div class="textBlock">
+                There have been at least {{object.positive }} cases of coronavirus in Ohio, according to a New York Times database. As of today, at least {{ object.death }} people had died.
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+  {% endblock content %}
