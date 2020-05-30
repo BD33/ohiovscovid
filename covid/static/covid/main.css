@@ -95,19 +95,7 @@ body {
     display: flex;
     justify-content: center;
   }
-  @media (min-width: 768px){
-    
-    .headingFor {
-      margin: 10px;
-      padding :2px;
-      color: black;
-      font-size: 15px;
-      border-style: solid;
-      border-width: 2px;
-      display: inline-block
-  }
-  
-  }
+
 .headingFor {
     margin: 20px;
     padding :5px;
@@ -155,3 +143,51 @@ body {
     font-size:40px;
     margin-top :120px;
 }
+
+
+
+
+@media (max-width: 600px){
+    
+  .headingFor {
+    margin: 5px;
+    padding :2px;
+    color: black;
+    font-size: 15px;
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block
+}
+
+
+
+.mainHead {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.preventSpread{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+}
+
+.graphTitle {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 30px;
+  
+
+}
+
+.textBlock {
+  font-size:30px;
+  margin-top :120px;
+  background-color: #333333;
+  color:white;
+  padding:20px;
+}
+} 
