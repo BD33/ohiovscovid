@@ -11,13 +11,13 @@ import datetime
 def home(request):
     
 
-    resp = requests.get('https://covidtracking.com/api/v1/states/OH/current.json')
+    resp = requests.get('https://covidtracking.com/api/v1/states/oh/current.json')
     total = json.loads(resp.text)
     
 
 
     ## Time line of Deaths
-    dailyResp = requests.get('https://covidtracking.com/api/v1/states/OH/daily.json')
+    dailyResp = requests.get('https://covidtracking.com/api/v1/states/oh/daily.json')
     dailyText = json.loads(dailyResp.text)
 
     dailyDeaths = []
